@@ -9,7 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+/**
+ * Service class responsible for interacting with the Canvas API.
+ * It handles fetching courses and assignments, including pagination.
+ */
 @Service
 public class CanvasService {
 

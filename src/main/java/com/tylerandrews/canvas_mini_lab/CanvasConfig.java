@@ -5,7 +5,10 @@ import org.springframework.context.annotation.Configuration;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-
+/**
+ * This class is responsible for loading the Canvas API token from the .env file.
+ * It provides methods to retrieve the API token and the base URL for the Canvas API.
+ */
 @Configuration
 public class CanvasConfig {
 
@@ -16,6 +19,10 @@ public class CanvasConfig {
         loadEnvFile();
     }
 
+    /**
+     * Loads the .env file and retrieves the CANVAS_API_TOKEN.
+     * Throws a RuntimeException if the .env file is missing or the token is not found.
+     */
     private void loadEnvFile() {
         try (BufferedReader reader = new BufferedReader(new FileReader(".env"))) {
             String line;

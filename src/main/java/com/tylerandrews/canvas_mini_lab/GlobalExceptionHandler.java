@@ -5,7 +5,10 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.ResourceAccessException;
-
+/**
+ * Global exception handler for the application.
+ * It catches exceptions thrown during the execution of controller methods and provides user-friendly error messages.
+ */
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
